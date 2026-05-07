@@ -2,35 +2,106 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <title>何柏霆 | 轉學考作品集</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>何柏霆 Boting Ho | 轉學考作品集</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans">
-    <div class="max-w-4xl mx-auto py-20 px-6">
-        <header class="text-center mb-16">
-            <h1 class="text-5xl font-bold mb-4">何柏霆 Boting He</h1>
-            <p class="text-xl text-slate-400 italic">"橋接底層邏輯與現代技術的開發者"</p>
-        </div>
+<body class="bg-slate-950 text-slate-100 font-sans selection:bg-indigo-500 selection:text-white">
 
-        <section class="bg-slate-800 p-8 rounded-2xl mb-12 shadow-xl border border-slate-700">
-            <h2 class="text-2xl font-bold mb-4 text-emerald-400">▍ 學習理念：工程師的價值在於解決問題的維度</h2>
-            <p class="leading-relaxed text-slate-300">
-                我不追求盲目跟風最新技術，而是致力於理解**底層原理**。從 C 語言的指標操作中磨練嚴謹，在 AI 資料科學中訓練洞察，並透過現代全端技術實現價值。我深信，AI 是時代的加速器，而真正的工程師應專注於架構規劃與邏輯推演，而非重複勞動。
+    <div class="max-w-5xl mx-auto py-20 px-6">
+        <header class="text-center mb-16">
+            <h1 class="text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-emerald-400">
+                何柏霆 Boting Ho
+            </h1>
+            <p class="text-xl text-slate-400 font-light tracking-widest uppercase">
+                Bridging Low-Level Logic & Modern Development
+            </p>
+        </header>
+
+        <section class="glass-card p-10 rounded-3xl mb-12 shadow-2xl relative overflow-hidden text-center md:text-left">
+            <div class="absolute top-0 right-0 p-4 opacity-10 hidden md:block">
+                <svg width="100" height="100" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <h2 class="text-2xl font-bold mb-6 text-emerald-400 flex items-center justify-center md:justify-start">
+                <span class="mr-3">▍</span> 學習理念：善用 AI 鑽研核心原理
+            </h2>
+            <p class="leading-relaxed text-slate-300 text-lg">
+                在資訊工程領域，我不追求盲目跟風最新技術，而是致力於理解 **底層運作機制**。從 C 語言的指標操作磨練嚴謹性，到 AI 資料科學中培養數據洞察力。我認為 AI 是提升學習維度的「槓桿」：利用它處理繁瑣實作，將腦力投入於演算法邏輯、系統架構與底層原理的深度學習，從「寫程式的人」進化為「懂架構的工程師」。
             </p>
         </section>
 
-        <div class="grid md:grid-cols-2 gap-6">
-            <div class="p-6 border border-slate-700 rounded-xl hover:bg-slate-800 transition">
-                <h3 class="text-xl font-bold mb-2">經典貪食蛇 3.0 (C++)</h3>
-                <p class="text-slate-400 text-sm mb-4">指標、鏈結串列、Windows API 實作。</p>
-                <a href="#" class="text-emerald-400 hover:underline">查看詳情 & 影片 →</a>
+        <h2 class="text-3xl font-bold mb-8 flex items-center">
+            <span class="text-indigo-500 mr-3">#</span> 精選專案展示
+        </h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <div class="glass-card p-8 rounded-2xl hover:border-indigo-500/50 transition-all duration-300 group">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-2xl font-bold text-white group-hover:text-indigo-400 transition">互動式吉他譜編輯器</h3>
+                    <span class="bg-indigo-500/10 text-indigo-400 text-xs px-2 py-1 rounded border border-indigo-500/20">Next.js / TS</span>
+                </div>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                    整合 AlphaTab 渲染引擎，解決開源工具在複雜樂譜下的渲染誤判問題。實作自定義和弦庫與 Metadata 保護機制，展現 TypeScript 類型安全與 Web 渲染優化能力。
+                </p>
+                <div class="flex gap-4 items-center">
+                    <a href="https://guitar-mauve.vercel.app/" target="_blank" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg text-sm font-bold transition">立即造訪 Live →</a>
+                    <a href="https://github.com/vincent560/guitar" target="_blank" class="text-slate-400 hover:text-white text-sm transition">GitHub Repo</a>
+                </div>
             </div>
-            <div class="p-6 border border-slate-700 rounded-xl hover:bg-slate-800 transition">
-                <h3 class="text-xl font-bold mb-2">人臉資料處理 (AI/Python)</h3>
-                <p class="text-slate-400 text-sm mb-4">Isomap 流形學習、特徵臉降維練習。</p>
-                <a href="#" class="text-emerald-400 hover:underline">查看分析報告 →</a>
+
+            <div class="glass-card p-8 rounded-2xl hover:border-emerald-500/50 transition-all duration-300 group">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-2xl font-bold text-white group-hover:text-emerald-400 transition">C 語言貪食蛇 3.0</h3>
+                    <span class="bg-emerald-500/10 text-emerald-400 text-xs px-2 py-1 rounded border border-emerald-500/20">C / Data Structure</span>
+                </div>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                    使用鏈結串列 (Linked List) 維護動態蛇身，展現嚴謹的記憶體管理能力。針對 Windows 環境優化游標定位，並解決系統層級之 IME 輸入法衝突問題。
+                </p>
+                <div class="flex gap-4">
+                    <span class="text-slate-500 text-sm font-medium italic">展示影片與技術報告準備中...</span>
+                </div>
             </div>
+
+            <div class="glass-card p-8 rounded-2xl hover:border-amber-500/50 transition-all duration-300 group">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-2xl font-bold text-white group-hover:text-amber-400 transition">AI 人臉資料降維實作</h3>
+                    <span class="bg-amber-500/10 text-amber-400 text-xs px-2 py-1 rounded border border-amber-500/20">Python / AI</span>
+                </div>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                    運用 Isomap (流形學習) 與 Eigenfaces (特徵臉) 進行高維影像數據分析，實踐數據降維與視覺化，展現將數學理論轉化為程式實作的整合能力。
+                </p>
+                <div class="flex gap-4">
+                    <span class="text-slate-500 text-sm font-medium italic text-amber-400/70">EDA 分析報告匯整中</span>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-2xl hover:border-rose-500/50 transition-all duration-300 group">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-2xl font-bold text-white group-hover:text-rose-400 transition">Linux 系統自動化維運</h3>
+                    <span class="bg-rose-500/10 text-rose-400 text-xs px-2 py-1 rounded border border-rose-500/20">Shell / DevOps</span>
+                </div>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                    實作使用者權限管理、自動化程序監控 Bash 腳本，具備伺服器管理、環境配置與 Git 分散式版本控制實務經驗，展現專業的開發流程素養。
+                </p>
+                <div class="flex gap-4">
+                    <span class="text-slate-500 text-sm font-medium italic">技術文件庫連結</span>
+                </div>
+            </div>
+
         </div>
+
+        <footer class="mt-20 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+            <p>© 2026 Boting Ho. Powered by GitHub Pages</p>
+        </footer>
     </div>
+
 </body>
 </html>
